@@ -11,10 +11,18 @@
 #include "calendar.hpp"
 #include "information.hpp"
 
+#include "screens.hpp"
+
+
 int main(int argc, const char * argv[]) {
+    
+    // 제이슨 로딩
+    // 제이슨 로딩 실패거나 정보가 없을때
+    
     std::string name;
     int grade, semester, year;
     
+    std::cout << "정보가 없습니다. 새로운 정보를 설정해 주세요." << std::endl;
     std::cout << "사용자의 정보를 입력하시오." << std::endl;
     std::cout << "이름 : " ;
     std::cin >> name;
@@ -27,12 +35,10 @@ int main(int argc, const char * argv[]) {
     
     information i(name, grade, semester, year);
     
-    if ( semester == 1){
-        printCalendar(year, 1,name);
-    }
-    else if( semester == 2){
-        printCalendar(year, 2,name);
-    }
+    start_menu();
+    int month = want_month(semester);
+    
     
     return (0);
 }
+

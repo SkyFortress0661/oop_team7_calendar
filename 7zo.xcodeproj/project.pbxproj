@@ -10,6 +10,7 @@
 		C26B9DF6237D6CA500FA37C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26B9DF5237D6CA500FA37C5 /* main.cpp */; };
 		C26B9DFE237D6CDC00FA37C5 /* information.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26B9DFC237D6CDC00FA37C5 /* information.cpp */; };
 		C26B9E01237D6D4900FA37C5 /* calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26B9DFF237D6D4900FA37C5 /* calendar.cpp */; };
+		C26B9E04237D858700FA37C5 /* screens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26B9E02237D858700FA37C5 /* screens.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C26B9DFD237D6CDC00FA37C5 /* information.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = information.hpp; sourceTree = "<group>"; };
 		C26B9DFF237D6D4900FA37C5 /* calendar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = calendar.cpp; sourceTree = "<group>"; };
 		C26B9E00237D6D4900FA37C5 /* calendar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = calendar.hpp; sourceTree = "<group>"; };
+		C26B9E02237D858700FA37C5 /* screens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = screens.cpp; sourceTree = "<group>"; };
+		C26B9E03237D858700FA37C5 /* screens.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screens.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				C26B9DFD237D6CDC00FA37C5 /* information.hpp */,
 				C26B9DFF237D6D4900FA37C5 /* calendar.cpp */,
 				C26B9E00237D6D4900FA37C5 /* calendar.hpp */,
+				C26B9E02237D858700FA37C5 /* screens.cpp */,
+				C26B9E03237D858700FA37C5 /* screens.hpp */,
 			);
 			path = 7zo;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				C26B9DFE237D6CDC00FA37C5 /* information.cpp in Sources */,
 				C26B9E01237D6D4900FA37C5 /* calendar.cpp in Sources */,
 				C26B9DF6237D6CA500FA37C5 /* main.cpp in Sources */,
+				C26B9E04237D858700FA37C5 /* screens.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
