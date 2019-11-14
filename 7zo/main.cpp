@@ -27,7 +27,12 @@ int main(int argc, const char * argv[]) {
     
     information i(name, grade, semester, year);
     
-    printCalendar(year);
+    if ( semester == 1){
+        printCalendar(year, 1,name);
+    }
+    else if( semester == 2){
+        printCalendar(year, 2,name);
+    }
     
     return (0);
 }

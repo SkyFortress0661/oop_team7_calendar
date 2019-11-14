@@ -14,6 +14,6 @@
 int dayNumber(int day, int month, int year);
 std::string getMonthName(int monthNumber);
 int numberOfDays(int monthNumber, int year);
-void printCalendar(int year);
+void printCalendar(int year, int semester, std::string& name);
 
 #endif /* calendar_hpp */

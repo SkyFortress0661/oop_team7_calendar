@@ -12,11 +12,9 @@
 
 int dayNumber(int day, int month, int year)
 {
-   static int t[] = { 0, 3, 2, 5, 0, 3, 5, 1,
-                      4, 6, 2, 4 };
+   static int t[] = { 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 };
    year -= month < 3;
-   return (year + year / 4 - year / 100 +
-       year / 400 + t[month - 1] + day) % 7;
+   return (year + year / 4 - year / 100 + year / 400 + t[month - 1] + day) % 7;
 }
  
 /*
@@ -127,18 +125,26 @@ int numberOfDays(int monthNumber, int year)
 }
  
 // Function to print the calendar of the given year
-void printCalendar(int year, int month)
+void printCalendar(int year, int semester, std::string& name)
 {
-   printf("         Calendar - %d\n\n", year);
-   int days;
+    printf("    %s's Calendar - %d\n\n", name.c_str(), year);
+    int days;
+    int start = 0;
  
-   // Index of the day from 0 to 6
-   int current = dayNumber(1, 1, year);
- 
+    // Index of the day from 0 to 6
+    int current = dayNumber(1, 1, year);
+    
    // i --> Iterate through all the months
    // j --> Iterate through all the days of the
    //       month - i
-   for (int i = 0; i < 12; i++)
+    if (semester == 1){
+        start = 2;
+    }
+    else if( semester == 2){
+        start = 8;
+    }
+
+   for (int i = start; i < start+4; i++)
    {
        days = numberOfDays(i, year);
  
